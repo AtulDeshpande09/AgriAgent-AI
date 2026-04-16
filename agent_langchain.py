@@ -32,8 +32,8 @@ with open("models/fertilizer.pkl", "rb") as f:
 # Config
 # ==========================
 
-api_key = "52d129c124aaa073f4208583f3299b19"
-Global_location = "Kolhapur"
+api_key = "AnyWeatherAPI- eg OpenWeather"
+Global_location = "Location"
 
 
 # ==========================
