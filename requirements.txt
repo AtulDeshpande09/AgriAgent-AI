@@ -1,0 +1,10 @@
+flask
+requests
+folium
+webbrowser
+scikit-learn
+pandas
+numpy
+langchain
+langchain-groq
+langchain-classic
