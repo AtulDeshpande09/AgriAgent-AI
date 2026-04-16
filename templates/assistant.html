@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Farming Assistant</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 18px;
+            border: none;
+            background-color: #2e7d32;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1b5e20;
+        }
+
+        .response-box {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eef7ee;
+            border-radius: 6px;
+            border-left: 5px solid #2e7d32;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>🌿 Smart Farming Assistant</h2>
+
+    <form method="POST">
+
+        <input 
+            type="text"
+            name="query"
+            placeholder="Ask about weather, fertilizer, or farming advice..."
+            required
+        >
+
+        <button type="submit">
+            Ask
+        </button>
+
+    </form>
+
+    {% if response %}
+
+        <div class="response-box">
+            {{ response }}
+        </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+
+</html>
